@@ -30,7 +30,8 @@ const NoteState = (props) => {
 
 export default NoteState
 
-/*
+/* Example Code Explanation for Understanding---> 
+
 The value prop of the NoteContext.Provider component is set to an object that contains two 
 properties: state and update. The state property holds the current state of the NoteState component,
 which is an object with two properties: name and class. The update property holds a function that 
