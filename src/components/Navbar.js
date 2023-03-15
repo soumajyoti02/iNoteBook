@@ -4,9 +4,7 @@ import { NavLink, useLocation } from "react-router-dom"
 const Navbar = () => {
     let location = useLocation() //It returns an object that contains information about the current URL.
     /*
-    useEffect() hook is used to add side effects to a functional component and allows you to execute code that needs to run 
-    after the component has rendered. It takes a function as an argument and an array of dependencies to determine when the 
-    effect should run.
+    useEffect() hook is used to add side effects to a functional component and allows you to execute code that needs to run after the component has rendered. It takes a function as an argument and an array of dependencies to determine when the effect should run.
     */
     useEffect(() => {
         console.log(location.pathname)
@@ -17,6 +15,9 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
+
+                    {/* A <NavLink> is a special kind of <Link> that knows whether or not it is "active" or "pending". */}
+
                     <NavLink className="navbar-brand" to="/">iNotebook</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

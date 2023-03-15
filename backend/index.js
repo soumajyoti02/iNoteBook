@@ -22,5 +22,5 @@ app.use('/api/notes', require('./routes/notes'))
 // The app instance listens to requests on the specified port and logs a message to the console when the server is started.
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`iNotebook Backend listening at http://localhost:${port}`)
 })
